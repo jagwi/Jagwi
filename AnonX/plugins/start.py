@@ -204,7 +204,7 @@ async def start_comm(client, message: Message, _):
             try:
                 await message.reply_sticker("CAACAgQAAxkBAANlY-8T3DH_f4W5G0epCHYwEj68IXkAApINAAKg8ylTZIjlbuvUoPsuBA")
                 await message.reply_photo(
-                    photo=config.START_IMG_URL,STATS_IMG_URL,
+                    photo=config.START_IMG_URL,
                     caption=_["start_2"].format(
                         config.MUSIC_BOT_NAME
                     ),
