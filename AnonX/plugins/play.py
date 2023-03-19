@@ -49,7 +49,10 @@ async def play_commnd(
     url,
     fplay,
 ):
-    mystic = await message.reply_text(
+    mystic = await message.reply_sticker("
+         CAACAgQAAx0Cbk5S0gACQQVkFtPT-EAdQ1ccfjfrnQ7J4NKnogACoBEAAqbxcR5O5UHja6tzTC8E")
+         else
+            await message.reply_text(
         _["play_2"].format(channel) if channel else _["play_1"]
     )
     plist_id = None
