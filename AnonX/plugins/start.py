@@ -45,7 +45,7 @@ async def start_comm(client, message: Message, _):
             keyboard = help_pannel(_)
             await message.reply_sticker("CAACAgQAAx0Cbk5S0gACQQVkFtPT-EAdQ1ccfjfrnQ7J4NKnogACoBEAAqbxcR5O5UHja6tzTC8E")
             await asyncio.sleep(1)
-            return await m.edit(
+            return await message.reply_photo(
                        photo=config.START_IMG_URL,
                        caption=_["help_1"], reply_markup=keyboard
             )
@@ -205,7 +205,7 @@ async def start_comm(client, message: Message, _):
             try:
                 await message.reply_sticker("CAACAgQAAx0Cbk5S0gACQQVkFtPT-EAdQ1ccfjfrnQ7J4NKnogACoBEAAqbxcR5O5UHja6tzTC8E")
                 await asyncio.sleep(1)
-                await m.edit(
+                await message.reply_photo(
                     photo=config.START_IMG_URL,
                     caption=_["start_2"].format(
                         config.MUSIC_BOT_NAME
