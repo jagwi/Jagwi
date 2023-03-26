@@ -30,7 +30,10 @@ from AnonX.utils.inline import (help_pannel, private_panel,
 
 loop = asyncio.get_running_loop()
 
-CHAMPU = ["https://te.legra.ph/file/325f18a097744e393410d.mp4","https://te.legra.ph/file/66d5b0ac3c3132c306e82.mp4","https://te.legra.ph/file/4801df0704766a7117fed.mp4","https://te.legra.ph/file/377e42ab9f54b4ab4a3d8.mp4"]
+CHAMPU = ["https://te.legra.ph/file/25ee7c99a0a690bc9214c.jpg","https://te.legra.ph/file/01c4b8a952caa98ae077d.jpg","https://te.legra.ph/file/0848d30b4393072249b1b.jpg","https://te.legra.ph/file/0d985f6ca9a4bd359850f.jpg",
+"https://te.legra.ph/file/098d0f42968661bedbe1f.jpg","https://te.legra.ph/file/40f6863b9906dbbdb714d.jpg","https://te.legra.ph/file/f647e6eb99559ef464085.jpg","https://te.legra.ph/file/daa1f0259c802f69b5651.jpg",
+"https://te.legra.ph/file/610172ce5c745deac513d.jpg","https://te.legra.ph/file/afd70e00524711264f7e7.jpg","https://te.legra.ph/file/af859209410f9d5b34fa3.jpg","https://te.legra.ph/file/e7368913dce8676ee74b2.jpg",
+"https://te.legra.ph/file/e88b824608997de8c55a3.jpg","https://te.legra.ph/file/cb0935bc30ac8166dea5c.jpg"]
 
 @app.on_message(
     filters.command(get_command("START_COMMAND"))
@@ -206,7 +209,7 @@ async def start_comm(client, message: Message, _):
             try:
                 SD = random.choice(CHAMPU)
                 await message.reply_sticker("CAACAgUAAx0Cbk5S0gACRGlkHfWUQTViSDyOraPPw-uXKvmCGgACbQcAAj5O-Vfacb2S2B5RQC8E")
-                await message.reply_video(
+                await message.reply_photo(
                     video=SD,
                     caption=_["start_2"].format(
                         config.MUSIC_BOT_NAME
