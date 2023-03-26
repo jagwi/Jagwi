@@ -1,6 +1,6 @@
 import asyncio
 import time
-import random
+import random 
 
 from pyrogram import filters
 from pyrogram.types import (InlineKeyboardButton,
@@ -206,7 +206,7 @@ async def start_comm(client, message: Message, _):
             try:
                 SD = random.choice(CHAMPU)
                 await message.reply_sticker("CAACAgUAAx0Cbk5S0gACRGlkHfWUQTViSDyOraPPw-uXKvmCGgACbQcAAj5O-Vfacb2S2B5RQC8E")
-                await message.reply_photo(
+                await message.reply_video(
                     video=SD,
                     caption=_["start_2"].format(
                         config.MUSIC_BOT_NAME
@@ -241,6 +241,7 @@ async def start_comm(client, message: Message, _):
 @LanguageStart
 async def testbot(client, message: Message, _):
     OWNER = OWNER_ID[0]
+    SD = random.choice(CHAMPU)
     out = start_pannel(_, app.username, OWNER)
     return await message.reply_photo(
                photo=config.START_IMG_URL,
