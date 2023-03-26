@@ -1,5 +1,6 @@
 import asyncio
 import time
+import random
 
 from pyrogram import filters
 from pyrogram.types import (InlineKeyboardButton,
@@ -29,6 +30,7 @@ from AnonX.utils.inline import (help_pannel, private_panel,
 
 loop = asyncio.get_running_loop()
 
+CHAMPU = ["https://te.legra.ph/file/325f18a097744e393410d.mp4","https://te.legra.ph/file/66d5b0ac3c3132c306e82.mp4","https://te.legra.ph/file/4801df0704766a7117fed.mp4","https://te.legra.ph/file/377e42ab9f54b4ab4a3d8.mp4"]
 
 @app.on_message(
     filters.command(get_command("START_COMMAND"))
@@ -202,9 +204,10 @@ async def start_comm(client, message: Message, _):
         out = private_panel(_, app.username, OWNER)
         if config.START_IMG_URL:
             try:
+                SD = random.choice(CHAMPU)
                 await message.reply_sticker("CAACAgUAAx0Cbk5S0gACRGlkHfWUQTViSDyOraPPw-uXKvmCGgACbQcAAj5O-Vfacb2S2B5RQC8E")
                 await message.reply_photo(
-                    photo=config.START_IMG_URL,
+                    video=SD,
                     caption=_["start_2"].format(
                         config.MUSIC_BOT_NAME
                     ),
