@@ -209,9 +209,10 @@ async def start_comm(client, message: Message, _):
         if config.START_IMG_URL:
             try:
                 SD = random.choice(CHAMPU)
-                await message.reply_sticker("sticker=AK")
-                await message.reply_video(
-                    video=SD,
+                AK = random.choice(ABHI)
+                await message.reply_sticker(sticker=AK)
+                await message.reply_pic(
+                    pic=SD,
                     caption=_["start_2"].format(
                         config.MUSIC_BOT_NAME
                     ),
