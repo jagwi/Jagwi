@@ -34,6 +34,7 @@ CHAMPU = ["https://te.legra.ph/file/25ee7c99a0a690bc9214c.jpg","https://te.legra
 "https://te.legra.ph/file/098d0f42968661bedbe1f.jpg","https://te.legra.ph/file/40f6863b9906dbbdb714d.jpg","https://te.legra.ph/file/f647e6eb99559ef464085.jpg","https://te.legra.ph/file/daa1f0259c802f69b5651.jpg",
 "https://te.legra.ph/file/610172ce5c745deac513d.jpg","https://te.legra.ph/file/afd70e00524711264f7e7.jpg","https://te.legra.ph/file/af859209410f9d5b34fa3.jpg","https://te.legra.ph/file/e7368913dce8676ee74b2.jpg",
 "https://te.legra.ph/file/e88b824608997de8c55a3.jpg","https://te.legra.ph/file/cb0935bc30ac8166dea5c.jpg"]
+ABHI = ["CAACAgUAAx0Cbk5S0gACRipkIIRemGrI72Nxf3ERmVuCBjZoHAACZQcAAv3X-FdwUm4PadspkC8E","CAACAgUAAx0Cbk5S0gACRilkIIQ5bFJ0zp_sw5xJd6A_H3V_hwACuAoAAqpL8VeMLUkZOwZ3Ci8E","CAACAgUAAx0Cbk5S0gACRihkIIQvDmCrfYrRyfc1kJDEhpqWsgACIQoAAkCj8Fdxa8YvGPC9ny8E"]
 
 @app.on_message(
     filters.command(get_command("START_COMMAND"))
@@ -208,7 +209,7 @@ async def start_comm(client, message: Message, _):
         if config.START_IMG_URL:
             try:
                 SD = random.choice(CHAMPU)
-                await message.reply_sticker("CAACAgUAAx0Cbk5S0gACRGlkHfWUQTViSDyOraPPw-uXKvmCGgACbQcAAj5O-Vfacb2S2B5RQC8E")
+                await message.reply_sticker("sticker=AK")
                 await message.reply_video(
                     video=SD,
                     caption=_["start_2"].format(
@@ -244,6 +245,7 @@ async def start_comm(client, message: Message, _):
 @LanguageStart
 async def testbot(client, message: Message, _):
     OWNER = OWNER_ID[0]
+    AK = random.choice(ABHI)
     SD = random.choice(CHAMPU)
     out = start_pannel(_, app.username, OWNER)
     return await message.reply_photo(
