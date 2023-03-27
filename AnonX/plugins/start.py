@@ -216,8 +216,8 @@ async def start_comm(client, message: Message, _):
                 SD = random.choice(CHAMPU)
                 AK = random.choice(ABHI)
                 await message.reply_sticker(sticker=AK)
-                await message.reply_photos(
-                    Photos=SD,
+                await message.reply_video(
+                    video=SD,
                     caption=_["start_2"].format(
                         config.MUSIC_BOT_NAME
                     ),
