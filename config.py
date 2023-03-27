@@ -23,7 +23,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 
 UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/XcuteboyX/Trying-best")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
-GIT_TOKEN = getenv("GIT_TOKEN", "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)
+GIT_TOKEN = getenv("GIT_TOKEN", "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")
 
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/the_update_silencer")
 SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/x_team_immortals_x")
