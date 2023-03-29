@@ -23,9 +23,9 @@ async def restart(client, m: Message):
     await asyncio.sleep(0.5)
     await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ʙᴜɪʟᴅɪɴɢ......")
     await asyncio.sleep(0.5)
-    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ʙᴜʟᴅɪɴɢ..")
+    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ʙᴜɪʟᴅɪɴɢ..")
     await asyncio.sleep(0.5)
-    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ......")
+    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ʙᴜɪʟᴅɪɴɢ......")
     await accha.delete()
     await asyncio.sleep(0.5)
     umm = await m.reply_sticker(
@@ -34,7 +34,7 @@ async def restart(client, m: Message):
     await umm.delete()
     await asyncio.sleep(2)
     await m.reply_photo(
-        photo=f"https://te.legra.ph/file/4b52da6d880cbb199298a.jpg",
+        photo=f"https://te.legra.ph/file/01c4b8a952caa98ae077d.jpg",
         caption=f"""ʜᴇʏ ʙᴀʙʏ🖤\n\nʜᴇʀᴇ ɪs ʙᴏᴛ ʀᴇᴘᴏ 💞""",
         reply_markup=InlineKeyboardMarkup(
             [
