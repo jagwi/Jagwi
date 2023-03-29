@@ -1,5 +1,4 @@
-from pyrogram 
-import Client, filters
+from pyrogram import Client, filters
 import requests
 import random
 import os
