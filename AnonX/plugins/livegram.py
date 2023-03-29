@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-from AnonX import OWNER_ID
+from AnonX import.config OWNER_ID
 from AnonX import pbot as bot
 
 
