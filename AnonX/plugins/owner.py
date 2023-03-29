@@ -28,12 +28,12 @@ async def restart(client, m: Message):
     await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ......")
     await accha.delete()
     await asyncio.sleep(0.5)
-    umm = await message.reply_sticker(
+    umm = await m.reply_sticker(
 
 "CAACAgUAAxkBAAIDG2QhN85PjxC3IZl3hYefSbz_w60-AAI-CQAC5Nr5V3U6V4xWQpckLwQ")
     await umm.delete()
     await asyncio.sleep(2)
-    await message.reply_photo(
+    await m.reply_photo(
         photo=f"https://te.legra.ph/file/4b52da6d880cbb199298a.jpg",
         caption=f"""ʜᴇʏ ʙᴀʙʏ🖤\n\nʜᴇʀᴇ ɪs ʙᴏᴛ ʀᴇᴘᴏ 💞""",
         reply_markup=InlineKeyboardMarkup(
