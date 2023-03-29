@@ -49,7 +49,7 @@ async def play_commnd(
     url,
     fplay,
 ):
-    mystic = await message.reply_text(
+    mystic = await message.reply_photo(photo=config.START_IMG_URL,
         _["play_2"].format(channel) if channel else _["play_1"]
     )
     plist_id = None
