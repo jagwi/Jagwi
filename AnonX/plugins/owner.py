@@ -15,9 +15,6 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
     filters.command("repo")
     & filters.private
     & ~filters.edited & filters.private & ~filters.edited)
-async def help(client: Client, message: Message):
-    
-@pbot.on_message(filters.command("repo"))
 async def restart(client, m: Message):
     await m.delete()
     accha = await m.reply("⚡")
