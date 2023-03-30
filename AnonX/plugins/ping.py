@@ -17,8 +17,6 @@ ping = get_command("PING_COMMAND")
 @app.on_message(filters.command("ping"))
 async def restart(client, ma: Message):
     await ma.delete()
-    await ma.reply_sticker(
-        "CAACAgUAAxkDAAJHbmLuy2NEfrfh6lZSohacEGrVjd5wAAIOBAACl42QVKnra4sdzC_uKQQ"
     await ma.reply_photo(
         photo=PING_IMG_URL,
         caption=_["ping_1"],
