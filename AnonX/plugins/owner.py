@@ -40,7 +40,7 @@ async def restart(client, m: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🌱ƨσʋяcɛ🌱", url=f"https://github.com/THE-VIP-BOY-OP/VIP-MUSIC")
+                        "🌱ƨσʋяcɛ🌱", url=f"https://t.me/its_cute_babu")
                 ]
             ]
         ),
@@ -77,7 +77,7 @@ async def restart(client, m: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🌱ƨσʋяcɛ🌱", url=f"https://t.me/telegram")
+                        "🖤 ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🖤", url=f"https://t.me/HOTX_MUSIC_BOT?startgroup=true")
                 ]
             ]
         ),
