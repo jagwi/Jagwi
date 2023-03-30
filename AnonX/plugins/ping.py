@@ -14,24 +14,23 @@ from AnonX.utils.inline.play import close_keyboard
 ### Commands
 PING_COMMAND = get_command("PING_COMMAND")
 
-@app.on_message(filters.command("PING_COMMAND"))
+@app.on_message(filters.command("PING", "ping"))
 async def restart(client, m: Message):
     await m.delete()
     accha = await m.reply("⚡")
     await asyncio.sleep(0.5)
-    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ..")
+    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ..")
     await asyncio.sleep(0.5)
-    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ......")
+    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ......")
     await asyncio.sleep(0.5)
-    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ..")
+    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ..")
     await asyncio.sleep(0.5)
-    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ......")
+    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ......")
     await accha.delete()
     await asyncio.sleep(0.5)
     umm = await m.reply_sticker(
         "CAACAgUAAxkDAAJHbmLuy2NEfrfh6lZSohacEGrVjd5wAAIOBAACl42QVKnra4sdzC_uKQQ"
     )
-
     await umm.delete()
     await asyncio.sleep(2)
     await m.reply_photo(
