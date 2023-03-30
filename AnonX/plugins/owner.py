@@ -48,7 +48,7 @@ async def restart(client, m: Message):
 
 
 
-app.on_message(
+@app.on_message(
     filters.command("ping")
     & filters.private
     & ~filters.edited & filters.private & ~filters.edited)
@@ -69,17 +69,6 @@ async def restart(client, m: Message):
 
 "CAACAgUAAxkBAAIDG2QhN85PjxC3IZl3hYefSbz_w60-AAI-CQAC5Nr5V3U6V4xWQpckLwQ")
     await umm.delete()
-    await asyncio.sleep(2)
-    await m.reply_photo(
-        photo=f"https://te.legra.ph/file/01c4b8a952caa98ae077d.jpg",
-        caption=f"""ʜᴇʏ ʙᴀʙʏ🖤""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "🌱ƨσʋяcɛ🌱", url=f"https://t.me/telegram")
-                ]
-            ]
         ),
     )
 
