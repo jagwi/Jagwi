@@ -12,9 +12,9 @@ from AnonX.utils.decorators.language import language
 from AnonX.utils.inline.play import close_keyboard
 
 ### Commands
-PING_COMMAND = get_command("PING_COMMAND")
+ping = get_command("PING_COMMAND")
 
-@app.on_message(filters.command("PING", "ping"))
+@app.on_message(filters.command("ping"))
 async def restart(client, m: Message):
     await m.delete()
     accha = await m.reply("⚡")
