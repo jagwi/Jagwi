@@ -32,6 +32,8 @@ from AnonX.utils.inline.settings import (
     cleanmode_settings_markup, playmode_users_markup, setting_markup,
     video_quality_markup)
 from AnonX.utils.inline.start import private_panel
+from AnonX.plugins.start import CHAMPU
+import random
 
 ### Command
 SETTINGS_COMMAND = get_command("SETTINGS_COMMAND")
@@ -99,12 +101,13 @@ async def settings_back_markup(
         try:
             await app.resolve_peer(OWNER_ID[0])
             OWNER = OWNER_ID[0]
+            KA = random.choice(CHAMPU)
         except:
             OWNER = None
         buttons = private_panel(_, app.username, OWNER)
         return await CallbackQuery.edit_message_media(
             InputMediaPhoto(
-                media=START_IMG_URL,
+                media=KA,
                 caption=_["start_2"].format(
                     CallbackQuery.from_user.first_name, MUSIC_BOT_NAME
                 ),
