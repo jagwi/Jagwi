@@ -56,7 +56,7 @@ async def start_comm(client, message: Message, _):
             keyboard = help_pannel(_)
             await message.reply_sticker("CAACAgUAAx0Cbk5S0gACRGlkHfWUQTViSDyOraPPw-uXKvmCGgACbQcAAj5O-Vfacb2S2B5RQC8E")
             return await message.reply_photo(
-                       photo=config.START_IMG_URL,
+                       photo=SD,
                        caption=_["help_1"], reply_markup=keyboard
             )
         if name[0:4] == "song":
@@ -215,6 +215,7 @@ async def start_comm(client, message: Message, _):
             try:
                 SD = random.choice(CHAMPU)
                 AK = random.choice(ABHI)
+                await message.reply_sticker(sticker=AK)
                 await message.reply_photo(
                     photo=SD,
                     caption=_["start_2"].format(
