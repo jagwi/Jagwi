@@ -215,19 +215,6 @@ async def start_comm(client, message: Message, _):
             try:
                 SD = random.choice(CHAMPU)
                 AK = random.choice(ABHI)
-                await message.delete()
-                accha = await message.reply("⚡")
-                await asyncio.sleep(0.5)
-                await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ sᴛᴀʀᴛɪɴɢ..")
-                await asyncio.sleep(0.5)
-                await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ sᴛᴀʀᴛɪɴɢ......")
-                await asyncio.sleep(0.5)
-                await accha.edit("ᴀʟʟ ᴍᴏsᴛ ᴅᴏɴᴇ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ.......")
-                await asyncio.sleep(0.5)
-                await accha.edit("🎉")
-                await accha.delete()
-                await asyncio.sleep(0.5)
-                await message.reply_sticker(sticker=AK)
                 await message.reply_photo(
                     photo=SD,
                     caption=_["start_2"].format(
